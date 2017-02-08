@@ -1,0 +1,22 @@
+// NAME: 		_images.scss
+// PROJECT:	RWD
+// :: %%COMMENT%%
+
+/*! IMAGE DEFAULT (RESPONSIVE)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+img {
+	width: 100%;
+	height: auto;
+}
+
+/*! HERO IMAGE - FRONT PAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+figure.hero-img {
+  margin: .05em;
+}
+
+.hero-img img {
+  width: 100%;
+  border-top: 3px solid #77A466;
+  border-bottom: 3px solid #77A466;
+}

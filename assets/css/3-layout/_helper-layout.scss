@@ -1,0 +1,35 @@
+// NAME: 		_helper-layout.scss
+// PROJECT:	RWD
+// :: %%COMMENT%%
+
+/*! HELPER LAYOUT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.hyphenate {
+  hyphens: auto;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.hide {
+	display: none;
+}
+
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.center-block {
+	display: block;
+	margin: 0 auto;
+}

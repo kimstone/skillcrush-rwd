@@ -1,0 +1,28 @@
+// NAME: 		_base-layout.scss
+// PROJECT:	RWD
+// :: %%COMMENT%%
+
+/*! PROJECT BASE LAYOUT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.site-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.site-header {
+	width: 100%;
+}
+
+.site-footer {
+	width: 100%;
+}
+
+/*! MOBILE FIRST
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.site-header-logo,
+.site-header-nav,
+.footer-area-1,
+.footer-area-2,
+.footer-area-3 {
+	width: 100%;
+}

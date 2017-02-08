@@ -1,0 +1,16 @@
+// NAME: 		_links.scss
+// PROJECT:	RWD
+// :: %%COMMENT%%
+
+/*! STANDARD LINKS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+a {
+	color: $clr-link-standard;
+	text-decoration: none;
+	outline: 0;
+	
+	&:hover,
+	&:focus {
+		color: lighten($clr-link-standard, 20%);
+	}
+}

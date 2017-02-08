@@ -1,0 +1,163 @@
+// NAME: 		_media-query.scss
+// PROJECT:	RWD
+// :: https://www.impressivewebs.com/modular-css-media-queries-sass/
+
+//*! MODULAR MEDIA QUERY
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// VARIABLES
+// :: following an adaptive approach
+// :: mobile 320 - 399
+$media: screen;
+$feature: min-width;
+$breakpoint1: 400px;		//  400px -  549px		small
+$breakpoint2: 550px;		//  550px -  767px		phablet
+$breakpoint3: 768px;		//  768px -  939px		tablet
+$breakpoint4: 940px;		//  940px - 1279px		laptop
+$breakpoint5: 1280px;		// 1280px							desktop
+
+
+// THE MIXIN
+@mixin modular-media-qry($value) {
+  @if $value == small {
+    @media #{$media} and ($feature: $breakpoint1) { @content; }
+  }
+  @else if $value == phablet {
+    @media #{$media} and ($feature: $breakpoint2) { @content; }
+  }
+  @else if $value == tablet {
+    @media #{$media} and ($feature: $breakpoint3) { @content; }
+  }
+  @else if $value == laptop {
+    @media #{$media} and ($feature: $breakpoint4) { @content; }
+  }
+  @else if $value == desktop {
+    @media #{$media} and ($feature: $breakpoint5) { @content; }
+  }
+}
+
+
+//*! MOBILE (DEFAULT)
+// :: for devices smaller than 400px
+// :: smallest known device width 320px
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.one-third {
+  margin-left: 0;
+}
+
+.footer-area-1,
+.footer-area-2 {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+/*! SMALL -- MODULAR MEDIA QUERY
+ :: for devices larger than 400px
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@include modular-media-qry(small) {
+
+  body {
+    /*background-color: lighten(purple, 70%);*/
+  }
+
+  .site-container {
+  	width: 96%;
+  	margin: 0 auto;
+  }
+
+}
+
+
+/*! PHABLET -- MODULAR MEDIA QUERY
+ :: for devices larger than 550px
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@include modular-media-qry(phablet) {
+
+  body {
+    /*background-color: */;
+  }
+
+}
+
+
+/*! TABLET -- MODULAR MEDIA QUERY
+ :: for devices larger than 768px
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@include modular-media-qry(tablet) {
+
+  body {
+    /*background-color: lighten(cyan, 40%);*/
+  }
+
+  .site-header {
+    overflow: hidden;
+    padding: 40px 0 30px 0;
+    text-align: left;
+  }
+
+  .site-header-nav ul {
+    float: right;
+  }
+
+  /*.one-third {
+    margin-left: 2.564102564102564%;
+  }*/
+
+  .footer-area-1,
+  .footer-area-2 {
+    border-bottom: 0px solid #EEEEEE;
+  }
+
+  .footer-area-2--wrapper {
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+  }
+
+  .footer-area-1,
+  .footer-area-2,
+  .footer-area-3 {
+  	width: 31.623931623931625%;
+  }
+
+}
+
+
+/*! LAPTOP -- MODULAR MEDIA QUERY
+ :: for devices larger than 940px
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@include modular-media-qry(laptop) {
+
+  body {
+    /*background-color: lighten(yellow, 40%);*/
+  }
+
+}
+
+
+/*! DESKTOP -- MODULAR MEDIA QUERY
+ :: for devices larger than 1280px
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@include modular-media-qry(desktop) {
+
+  body {
+    /*background-color: lighten(blue, 40%);*/
+  }
+
+  .site-header-logo {
+    width: 38.4615384615384616%;
+    text-align: left;
+  }
+
+  nav.site-header-nav {
+    width: 58.9743589743589744%;
+    text-align: right;
+    margin-left: 2.564102564102564%;
+  }
+
+
+}

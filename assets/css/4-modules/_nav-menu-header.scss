@@ -1,0 +1,45 @@
+// NAME: 		_nav-menu-header.scss
+// PROJECT:	RWD
+// :: http://responsive-sass-nav.com
+
+//*! HEADER NAV MENU VARIABLES
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+$link-color: #77A466;
+$link-hover: #000000;
+$link-font-size: 14px;
+$link-vertical-padding: 0px;      //Controls Menu top & bottom padding
+$link-horizontal-padding: 10px;    //Contols Menu left & right padding
+$menu-background: #77A466;        //Control Menu Color Scheme
+
+/*! HEADER NAV MENU STYLES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+nav.site-header-nav {
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+}
+
+nav.site-header-nav ul {
+  float: none;
+  padding: 0px;
+  margin: .5em 0 1em 0;
+
+  li {
+    display: inline-block;
+  } // end li
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: $link-font-size;
+    color: $link-color;
+    padding: $link-vertical-padding $link-horizontal-padding;
+
+    &:hover {
+      /*background:darken($menu-background,10%);*/
+      color:$link-hover;
+    }  //end hover
+
+  }  //end a
+
+}  // end ul

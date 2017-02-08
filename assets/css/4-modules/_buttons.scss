@@ -1,0 +1,33 @@
+// NAME: 		_buttons.scss
+// PROJECT:	RWD
+// :: %%COMMENT%%
+
+/*! BTN
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.btn {
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px 20px;
+
+  font-family:  sans-serif;
+  color: #d5d5d5;
+  font-size: 14px;
+  text-transform: uppercase;
+
+	&--default {
+		@extend .btn;
+		background-color: #015079;
+		border-color: #296c8f;
+		box-shadow: 1px 1px 1px 1px #013655;
+	}
+
+	&--callout {
+		@extend .btn;
+		background-color: #45a641;
+		border-color: #64b660;
+		box-shadow: 1px 1px 1px 1px #013655;
+	}
+
+}

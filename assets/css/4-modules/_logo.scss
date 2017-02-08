@@ -1,0 +1,21 @@
+// NAME: 		_logo.scss
+// PROJECT:	RWD
+// :: %%COMMENT%%
+
+/*! LOGO
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.site-header-logo {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+
+  &--clr1 {
+    color: $clr-primary;
+  }
+
+  &--clr2 {
+    color: #000000;
+  }
+}

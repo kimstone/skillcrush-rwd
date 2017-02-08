@@ -1,0 +1,89 @@
+/****************************************************
+    COLUMN CLASSES
+    ref url: https://gist.github.com/studiopress/5700003
+  **************************************************/
+
+.one-half,
+.one-third,
+.one-fourth,
+.one-fifth,
+.one-sixth,
+.two-thirds,
+.two-fourths,
+.two-fifths,
+.two-sixths,
+.three-fourths,
+.three-fifths,
+.three-sixths,
+.four-fifths,
+.four-sixths,
+.five-sixths {
+  float: left;
+  margin-left: 2.564102564102564%;
+}
+
+.one-half,
+.two-fourths,
+.three-sixths {
+  width: 48.717948717948715%;
+}
+
+.one-third,
+.two-sixths {
+  width: 31.623931623931625%;
+}
+
+.two-thirds,
+.four-sixths {
+  width: 65.81196581196582%;
+}
+
+.one-fourth {
+  width: 23.076923076923077%;
+}
+
+.three-fourths {
+  width: 74.35897435897436%;
+}
+
+.one-fifth {
+  width: 17.9487179487179488%;
+}
+
+.two-fifths {
+  width: 38.4615384615384616%;
+}
+
+.three-fifths {
+  width: 58.9743589743589744%;
+}
+
+.four-fifths {
+  width: 79.4871794871794872%;
+}
+
+.one-sixth {
+  width: 14.52991452991453%;
+}
+
+.five-sixths {
+  width: 82.90598290598291%;
+}
+
+.first {
+  clear: both;
+  margin-left: 0;
+}
+
+.clearfix {
+  clear: both;
+  content: ".";
+  display: block;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearboth {
+  clear: both;
+}
